@@ -71,10 +71,10 @@ After the browser refreshes, the list of heroes appears.
 The heroes list should be attractive and should respond visually when users
 hover over and select a hero from the list.
 
-In the [first tutorial](tutorial/toh-pt0#app-wide-styles), you set the basic styles for the entire application in `styles.css`.
+In the [first tutorial](tutorial/toh-pt0#app-wide-styles), you set the basic styles for the entire application in 'styles.scss'.
 That stylesheet didn't include styles for this list of heroes.
 
-You could add more styles to `styles.css` and keep growing that stylesheet as you add components.
+You could add more styles to 'styles.scss' and keep growing that stylesheet as you add components.
 
 You may prefer instead to define private styles for a specific component and keep everything a component needs&mdash; the code, the HTML,
 and the CSS &mdash;together in one place.
@@ -85,20 +85,20 @@ and deliver the component's intended appearance even if the global styles are di
 You define private styles either inline in the `@Component.styles` array or
 as stylesheet file(s) identified in the `@Component.styleUrls` array.
 
-When the CLI generated the `HeroesComponent`, it created an empty `heroes.component.css` stylesheet for the `HeroesComponent`
+When the CLI generated the `HeroesComponent`, it created an empty `heroes.component.scss` stylesheet for the `HeroesComponent`
 and pointed to it in `@Component.styleUrls` like this.
 
 <code-example path="toh-pt2/src/app/heroes/heroes.component.ts" region="metadata"
  header="src/app/heroes/heroes.component.ts (@Component)">
 </code-example>
 
-Open the `heroes.component.css` file and paste in the private CSS styles for the `HeroesComponent`.
+Open the `heroes.component.scss` file and paste in the private CSS styles for the `HeroesComponent`.
 You'll find them in the [final code review](#final-code-review) at the bottom of this guide.
 
 <div class="alert is-important">
 
 Styles and stylesheets identified in `@Component` metadata are scoped to that specific component.
-The `heroes.component.css` styles apply only to the `HeroesComponent` and don't affect the outer HTML or the HTML in any other component.
+The `heroes.component.scss` styles apply only to the `HeroesComponent` and don't affect the outer HTML or the HTML in any other component.
 
 </div>
 
@@ -231,13 +231,13 @@ Here are the code files discussed on this page, including the `HeroesComponent` 
   <code-pane header="src/app/mock-heroes.ts" path="toh-pt2/src/app/mock-heroes.ts">
   </code-pane>
 
-  <code-pane header="src/app/heroes/heroes.component.ts" path="toh-pt2/src/app/heroes/heroes.component.ts">
+  <code-pane header="src/app/heroes/heroes.component.spec.ts" path="toh-pt2/src/app/heroes/heroes.component.ts">
   </code-pane>
 
   <code-pane header="src/app/heroes/heroes.component.html" path="toh-pt2/src/app/heroes/heroes.component.html">
   </code-pane>
 
-  <code-pane header="src/app/heroes/heroes.component.css" path="toh-pt2/src/app/heroes/heroes.component.css">
+  <code-pane header="src/app/heroes/heroes.component.scss" path="toh-pt2/src/app/heroes/heroes.component.scss">
   </code-pane>
 
 </code-tabs>
